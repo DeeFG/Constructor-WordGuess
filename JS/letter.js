@@ -1,18 +1,19 @@
-function Letter(dash,guessed){
-    this.dash = "_";
-    this.guessed = true ;
-    this.charCheck = function checkChar(){
-       // if(this.guessed=== true){
-           console.log("Push letter");
-      //  }
+function Letter(letter) {
+    this.letter = letter;
+    this.guessed = false;
+    this.toString = function () {
+        if (!this.guessed) {
+            //If INPUT guessed is !=== ( true) letter then PUSH "_"
+            return "_";
 
+        } else {
+            //if INPUT gueesed is ===( false) letter then PUSH LETTER
+            if (this.guessed) {
+                return this.letter;
+            }
 
-    };
+        }
+    }        
+}
 
-
-};
-
-
-let a = new Letter("_",true);
-
-a.charCheck();
+module.export = Letter; 

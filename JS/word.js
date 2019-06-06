@@ -1,15 +1,25 @@
-const letter = require("letter.js")
+const letter = require("JS/letter.js")
 
-function Word(dash,guessed){
-    this.array= [];
-    this.guessed = true ;
+
+
+function Word(guessed){
+    this.array = [];
+    this.toString = function toString(params) {
+      
+
+   }
+
     this.charCheck = function checkChar(){
-        if(this.guessed=== true){
-            //pushLETTER
-        }
 
+       
 
     };
 
 
 };
+
+
+
+
+
+
